@@ -14,7 +14,7 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
     
     if x==1 and y==1: # notandi byrjar í reit (1,1)
         print('You can travel: (N)orth.') # þessi átt er í boði á fyrsta reit
-        direction = input('Direction:') #notandi slær inn átt sem hann vill fara
+        direction = input('Direction: ') #notandi slær inn átt sem hann vill fara
         if (direction == 'N') or (direction =='n') : # ef notandi slær inn rétta átt fer hann á næsta viðeigandi reit
             y = y+1 # þannig að y hækkar um 1 og þar af leiðandi kominn á annann reit
         else:
@@ -22,7 +22,7 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
             
     elif x==1 and y==2: #endurtekur sig fyrir hvern reit
         print('You can travel: (N)orth or (E)ast or (S)outh.')
-        direction = input('Direction:')
+        direction = input('Direction: ')
         if (direction == 'N') or (direction == 'n'):
             y = y + 1
         elif (direction == 'E') or (direction == 'e'):
@@ -35,7 +35,7 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
 
     elif x==1 and y==3:
         print('You can travel: (E)ast or (S)outh.')
-        direction = input('Direction:')
+        direction = input('Direction: ')
         if (direction == 'E') or (direction == 'e'):
             x = x + 1
         elif (direction == 'S') or (direction == 's'):
@@ -45,7 +45,7 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
             
     elif x==2 and y==3:
         print('You can travel: (E)ast or (W)est.')
-        direction = input('Direction:')
+        direction = input('Direction: ')
         if (direction == 'E') or (direction == 'e'):
             x = x + 1
         elif (direction == 'W') or (direction == 'w'):
@@ -55,7 +55,7 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
             
     elif x==2 and y==2:
         print('You can travel: (S)outh or (W)est.')
-        direction = input('Direction:')
+        direction = input('Direction: ')
         if (direction == 'S') or (direction == 's'):
             y = y - 1
         elif (direction == 'w') or (direction == 'W'):
@@ -65,7 +65,7 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
             
     elif x==2 and y==1:
         print('You can travel: (N)orth.')
-        direction = input('Direction:')
+        direction = input('Direction: ')
         if (direction == 'N') or (direction == 'n'):
             y = y+1
         else:
@@ -73,7 +73,7 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
             
     elif x==3 and y==3:
         print('You can travel: (S)outh or (W)est.')
-        direction = input('Direction:')
+        direction = input('Direction: ')
         if (direction == 'S') or (direction == 's'):
             y = y - 1
         elif (direction == 'W') or (direction == 'w'):
@@ -82,8 +82,8 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
             print('Not a valid direction!')
         
     elif x==3 and y==2:
-        print('You can travel: (N)orth and (S)outh.')
-        direction = input('Direction:')
+        print('You can travel: (N)orth or (S)outh.')
+        direction = input('Direction: ')
         if (direction == 'N') or (direction == 'n'):
             y = y+1
         elif (direction == 'S') or (direction == 's'):
