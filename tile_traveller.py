@@ -92,6 +92,9 @@ while not ((x==3) and (y==1)): # forritið heldur áfram á meðan x er ekki 3 o
         else:
             print('Not a valid direction!')
     
+    
+    # https://github.com/Robertvilhjalmur/TileTraveller.git
+    # gh repo clone Robertvilhjalmur/TileTraveller
 
         
 
